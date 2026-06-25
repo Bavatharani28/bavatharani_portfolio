@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavatharani Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h2>Bava</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-left">
+            <img src="profile.jpeg" alt="Bavatharani">
+        </div>
+
+        <div class="hero-right">
+            <h1>Bavatharani Velusamy</h1>
+            <h3>Aspiring Full Stack Developer</h3>
+            <p>Passionate about Web Development, Full Stack Development and UI/UX Designing.</p>
+
+            <div class="buttons">
+                <a href="https://www.linkedin.com/in/bavatharani-v-ab473630a/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Bavatharani28" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/Bavatharani2801/" target="_blank">LeetCode</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="card-section">
+        <h2>About Me</h2>
+        <p>
+            I am Bavatharani Velusamy, a final-year B.Tech Information Technology student at
+            Dr.N.G.P Institute of Technology. I am passionate about web development,
+            full-stack development and UI/UX design. I enjoy building scalable and user-friendly applications.
+        </p>
+    </section>
+
+    <section id="skills" class="card-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>PostgreSQL</span>
+            <span>DSA</span>
+        </div>
+    </section>
+
+    <section id="projects" class="card-section">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>SnackSpot</h3>
+            <p>Full-stack food ordering application built with React, Spring Boot and MySQL.</p>
+            <button onclick="openModal('snackspot')">Read More</button>
+            <a href="https://github.com/Bavatharani28/SnackSpot" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>AgriConnect</h3>
+            <p>Smart agricultural resource management platform for farmers and workers.</p>
+            <button onclick="openModal('agri')">Read More</button>
+            <a href="https://github.com/Bavatharani28/agriconnect" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <section id="contact" class="card-section">
+        <h2>Contact</h2>
+        <p>Email: bavatharanivelusamy@gmail.com</p>
+        <p>Phone: +91 9597298374</p>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span onclick="closeModal()" class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
