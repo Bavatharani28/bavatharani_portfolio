@@ -62,16 +62,20 @@ nav a{
 
 .buttons{
     margin-top:20px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
 }
 
 .buttons a{
     display:inline-block;
-    margin-right:10px;
     padding:12px 18px;
     background:#222;
     color:white;
     text-decoration:none;
     border-radius:8px;
+    white-space:nowrap;
 }
 
 .card-section{
@@ -150,5 +154,13 @@ nav a{
     nav{
         flex-direction:column;
         gap:20px;
+    }
+      .buttons{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .buttons a{
+        width:fit-content;
     }
 }
