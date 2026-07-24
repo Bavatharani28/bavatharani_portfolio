@@ -1,6 +1,7 @@
 // Typing Effect
 
 const roles = [
+    "Data Engineer",
     "Full Stack Developer",
     "Java Backend Developer",
     "UI/UX Designer",
