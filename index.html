@@ -1,175 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bavatharani Portfolio</title>
+
+    <title>Bavatharani | Full Stack Developer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <h4>Key Features</h4>
+
+        <ul id="modalFeatures"></ul>
+
+    </div>
+
+</div>
 <body>
 
+
+<!-- Navbar -->
+
 <nav>
-    <h2>Bavatharani</h2>
+
+   <!-- <h2 class="logo">Bava.</h2> -->
+
     <ul>
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
+
 </nav>
 
 
-<section class="hero">
 
-    <div class="hero-left">
-        <img src="profile.jpeg" alt="Bavatharani">
-    </div>
 
-    <div class="hero-right">
+<!-- Hero -->
 
-        <h1>Bavatharani Velusamy</h1>
+<section id="home" class="hero">
 
-        <h3>Software Developer | Full Stack Developer</h3>
 
-        <p>
-            Passionate about Full Stack Development, Backend Development,
-            Database Management and building user-friendly applications.
-        </p>
+<div class="hero-content">
+
+<h1>
+Hi, I'm <span>Bavatharani</span>
+</h1>
+
+
+<h2>
+I am a <span id="typing"></span><span class="cursor">|</span>
+</h2>
+
+
+<p>
+B.Tech Information Technology student passionate about
+Full Stack Development, Backend Engineering and UI/UX Design.
+</p>
+
+
 
 <div class="buttons">
-<a href="https://www.linkedin.com/in/bavatharani-v-ab473630a/" target="_blank">
-LinkedIn
+
+<a href="resume.pdf" target="_blank">
+View Resume
 </a>
 
-<a href="https://github.com/Bavatharani28" target="_blank">
-GitHub
-</a>
-
-<a href="https://leetcode.com/u/Bavatharani2801/" target="_blank">
-LeetCode
-</a>
-
-<a href="BavatharaniVelusamy.pdf" download>
+<a href="resume.pdf" download>
 Download Resume
 </a>
+
+
+<a href="#projects">
+View Projects
+</a>
+
+
 </div>
 
-    </div>
+
+
+<div class="social">
+
+<a href="https://www.linkedin.com/in/bavatharani-v-ab473630a/">
+<i class="fa-brands fa-linkedin"></i>
+</a>
+
+
+<a href="https://github.com/Bavatharani28">
+<i class="fa-brands fa-github"></i>
+</a>
+
+
+<a href="https://leetcode.com/u/Bavatharani2801/">
+<i class="fa-solid fa-code"></i>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="profile-box">
+
+<img src="profile.jpeg" alt="Bavatharani Profile">
+
+</div>
+
+
 
 </section>
 
 
 
-<section id="about" class="card-section">
+
+
+
+
+<!-- About Section -->
+
+<section id="about" class="section">
+
 
 <h2>About Me</h2>
 
-<p>
+
+<p class="about-text">
+
 I am Bavatharani Velusamy, a B.Tech Information Technology student
-at Dr. N.G.P Institute of Technology (2023-2027).
-I am passionate about software development, full-stack applications and
-problem solving. I enjoy designing and developing scalable applications
-using modern technologies.
+at Dr.N.G.P Institute of Technology with a CGPA of 8.62.
+
+I am passionate about Full Stack Development, Backend Engineering
+and UI/UX Design. I enjoy building scalable and user-friendly
+applications using modern technologies.
+
 </p>
 
-</section>
 
 
+<div class="timeline">
 
-<section id="skills" class="card-section">
 
-<h2>Skills</h2>
+<!-- Education -->
 
-<div class="skills-grid">
+<div class="timeline-item">
 
-<span>Java</span>
-<span>JavaScript</span>
 
-<span>HTML</span>
-<span>CSS</span>
-<span>React.js</span>
+<div class="timeline-dot"></div>
 
-<span>Node.js</span>
-<span>Spring Boot</span>
 
-<span>SQL</span>
-<span>PostgreSQL</span>
-<span>MongoDB</span>
+<div class="timeline-content">
 
-<span>DSA</span>
-<span>DBMS</span>
-<span>Figma</span>
+<h3>🎓 B.Tech Information Technology</h3>
+
+<span>2023 - 2027</span>
+
+<p>
+Dr.N.G.P Institute of Technology
+<br>
+CGPA: 8.62
+</p>
 
 </div>
 
+</div>
+
+
+
+
+
+<!-- Internship -->
+
+
+<div class="timeline-item">
+
+
+<div class="timeline-dot"></div>
+
+
+<div class="timeline-content">
+
+
+<h3>💻 UI/UX Design Intern</h3>
+
+<span>June 2025</span>
+
+
+<p>
+App Innovation Technologies Pvt Ltd
+<br>
+• Designed responsive web pages using HTML & CSS
+<br>
+• Created UI designs using Figma
+<br>
+• Developed portfolio webpage
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
 </section>
 
 
 
-<section id="projects" class="card-section">
+
+
+
+
+<!-- Skills -->
+
+
+<section id="skills" class="section">
+
+
+<h2>Skills</h2>
+
+
+<div class="skills-container">
+
+
+<div class="skill-card">
+
+<h3>Frontend</h3>
+
+<p>
+HTML<br>
+CSS<br>
+JavaScript<br>
+React.js<br>
+Bootstrap
+</p>
+
+</div>
+
+
+
+
+<div class="skill-card">
+
+<h3>Backend</h3>
+
+<p>
+Java<br>
+Spring Boot<br>
+Node.js<br>
+REST API
+</p>
+
+</div>
+
+
+
+
+
+<div class="skill-card">
+
+<h3>Database</h3>
+
+<p>
+PostgreSQL<br>
+MySQL<br>
+MongoDB
+</p>
+
+</div>
+
+
+
+
+<div class="skill-card">
+
+<h3>Tools</h3>
+
+<p>
+Git<br>
+GitHub<br>
+Figma<br>
+Postman
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Projects -->
+
+
+<section id="projects" class="section">
+
 
 <h2>Projects</h2>
 
 
+<div class="project-container">
+
+
+
 <div class="project-card">
 
-<h3>AgriConnect</h3>
+    <div class="project-badge featured">
+        ⭐ Featured
+    </div>
+
+    <i class="fa-solid fa-utensils project-icon"></i>
+
+    <h3>SnackSpot</h3>
+
+    <p>
+        A full-stack food ordering web application where users can
+        browse menus, manage carts, and place orders securely.
+    </p>
+
+    <ul class="project-features">
+        <li>✔ User Authentication</li>
+        <li>✔ Cart Management</li>
+        <li>✔ Admin Dashboard</li>
+        <li>✔ Responsive Design</li>
+    </ul>
+
+    <div class="tech-stack">
+        <span>React</span>
+        <span>Spring Boot</span>
+        <span>MySQL</span>
+    </div>
+
+    <div class="project-buttons">
+
+        <a href="https://github.com/Bavatharani28/SnackSpot" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <button onclick="openModal('snackspot')">
+            Details
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="project-card">
+
+    <div class="project-badge hackathon">
+        🏆 Hackathon
+    </div>
+
+    <i class="fa-solid fa-seedling project-icon"></i>
+
+    <h3>AgriConnect</h3>
+
+    <p>
+        Smart agricultural resource management platform connecting
+        farmers, workers, machine owners and service providers.
+    </p>
+
+    <ul class="project-features">
+        <li>✔ Farmer Module</li>
+        <li>✔ Worker Module</li>
+        <li>✔ Machine Booking</li>
+        <li>✔ Smart Resource Discovery</li>
+    </ul>
+
+    <div class="tech-stack">
+        <span>React</span>
+        <span>Spring Boot</span>
+        <span>PostgreSQL</span>
+    </div>
+
+    <div class="project-buttons">
+
+        <a href="https://github.com/Bavatharani28/agriconnect" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <button onclick="openModal('agri')">
+            Details
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="project-card">
+
+    <div class="project-badge academic">
+        🎓 Academic
+    </div>
+
+    <i class="fa-solid fa-graduation-cap project-icon"></i>
+
+    <h3>Placement Management System</h3>
+
+    <p>
+        MERN stack application that automates student placement
+        activities and recruitment management.
+    </p>
+
+    <ul class="project-features">
+        <li>✔ Student Portal</li>
+        <li>✔ Company Management</li>
+        <li>✔ Placement Tracking</li>
+        <li>✔ Admin Dashboard</li>
+    </ul>
+
+    <div class="tech-stack">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+    </div>
+
+    <div class="project-buttons">
+
+        <a href="#" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+
+        <button onclick="openModal('placement')">
+            Details
+        </button>
+
+    </div>
+
+</div>
+<!--Achievements-->
+<section id="achievements" class="section">
+
+<h2>Achievements</h2>
+
+
+<div class="achievement-container">
+
+
+<div class="achievement-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h3>Bharat Academix CodeQuest Hackathon 2026</h3>
 
 <p>
-Smart agricultural resource management platform connecting farmers,
-workers and service providers using React, Spring Boot and PostgreSQL.
+Selected for Prototype Round after successfully clearing
+the Idea Submission Round.
 </p>
-
-<button onclick="openModal('agri')">
-Read More
-</button>
-
-<a href="https://github.com/Bavatharani28/agriconnect" target="_blank">
-GitHub
-</a>
 
 </div>
 
 
 
-<div class="project-card">
 
-<h3>Placement Automated Management System</h3>
+<div class="achievement-card">
+
+<i class="fa-solid fa-medal"></i>
+
+<h3>Third Prize - 24 Hour Hackathon</h3>
 
 <p>
-Full-stack placement management system to automate campus recruitment
-with role-based access and student eligibility filtering.
+VynFest 2025,
+KPR Institute of Engineering and Technology.
 </p>
-
-<button onclick="openModal('placement')">
-Read More
-</button>
-
-<a href="https://github.com/Bavatharani28" target="_blank">
-GitHub
-</a>
 
 </div>
 
 
 
-<div class="project-card">
 
-<h3>SnackSpot</h3>
+<div class="achievement-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>Second Prize - Campus Modelathon 2025</h3>
 
 <p>
-Full-stack food ordering application built using React, Spring Boot and
-PostgreSQL for managing users, products and orders.
+Sustainability and Resource Management,
+Dr.N.G.P Institute of Technology.
 </p>
 
-<button onclick="openModal('snackspot')">
-Read More
-</button>
+</div>
 
-<a href="https://github.com/Bavatharani28/SnackSpot" target="_blank">
-GitHub
-</a>
 
 </div>
 
@@ -178,49 +530,126 @@ GitHub
 
 
 
-<section id="contact" class="card-section">
 
-<h2>Contact</h2>
+<section id="certifications" class="section">
 
-<p>Email: bavatharanivelusamy@gmail.com</p>
+
+<h2>Certifications</h2>
+
+
+<div class="certificate-container">
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h3>NPTEL Certification</h3>
 
 <p>
-LinkedIn:
-<a href="https://www.linkedin.com/in/bavatharani-v-ab473630a/">
-bavatharani-v
-</a>
+Human Computer Interaction
+<br>
+Completed certification on usability,
+user experience principles and interaction design.
 </p>
 
+</div>
+
+
+
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h3>NPTEL Certification</h3>
+
 <p>
-GitHub:
-<a href="https://github.com/Bavatharani28">
-Bavatharani28
-</a>
+Industry 4.0 and Industrial IoT
+<br>
+Learned concepts of IoT,
+automation and smart manufacturing systems.
 </p>
+
+</div>
+
+
+
+</div>
 
 
 </section>
 
 
 
-<div id="modal" class="modal">
 
-<div class="modal-content">
 
-<span onclick="closeModal()" class="close">
-&times;
-</span>
+<section id="contact" class="section">
 
-<h2 id="modal-title"></h2>
+    <h2>Get In Touch</h2>
 
-<p id="modal-text"></p>
+    <p>
+        Feel free to connect with me for internships, collaborations,
+        or full-time opportunities.
+    </p>
 
-</div>
+    <div class="contact-info">
 
-</div>
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:bavatharanivelusamy@gmail.com">
+                Email
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+919597298374">
+                +91 9597298374
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/bavatharani-v-ab473630a/" target="_blank">
+                LinkedIn Profile
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/Bavatharani28" target="_blank">
+                GitHub Profile
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-code"></i>
+            <a href="https://leetcode.com/u/Bavatharani2801/" target="_blank">
+                LeetCode Profile
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer>
+
+<p>
+© 2026 Bavatharani Velusamy
+</p>
+
+</footer>
+
 
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
